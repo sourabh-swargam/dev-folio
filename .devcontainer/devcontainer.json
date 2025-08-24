@@ -1,0 +1,9 @@
+{
+    "name": "Dev Container for Node Development",
+    "image": "node:current-alpine3.22",
+    "workspaceFolder": "/workspace",
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+    ],
+    "postCreateCommand": "npm install -g serve"
+}
